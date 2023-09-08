@@ -1,0 +1,78 @@
+HTML
+
+title="hovering": if hover on element, hovering will be shown,
+
+1.	<pre> The pre tag preserves both spaces and line breaks
+
+2.	<p><a href="#C4">Jump to Chapter 4</a></p> :   jumps to element of id C4
+3.	<a href="html_demo.html#C4">Jump to Chapter 4</a>  : jump to another file demo
+
+4.	Go to diff pages by clicking at diff parts of a img
+a.	<img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+b.	<map name="workmap">
+i.	<area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+ii.	<area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+iii.	<area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+c.	</map>
+5.	HTML Table Colspan & Rowspan
+6.	HTML Table Colgroup
+7.	
+
+
+
+position:
+      Static:
+           (default mode) arranged according to there document order(dom)
+      Relative:
+            move relative to its own position,leave a gap( left:20px,right:30px....)
+      Absolute:
+            move relative to its direct parent,doesnt leave any gap( left:20px,right:30px....)
+      fixed:
+            move relative to brousing window and get fixed there( left:20px,right:30px....).
+      sticky:
+            get fixed even after scrolling.
+Flex:
+      Parent:
+            flex-direction:
+            justify-content:
+            align-items:
+            flex-wrap:
+
+      Child:
+            flex-grow:
+            align-self:
+            order:
+
+
+CSS
+1.	p.a {
+  text-align-last: right;
+}
+2.	div {
+  overflow: scroll;
+}
+3.	pseudo-class==: like hover,visited and pseudo-element==:( on elements like first line)
+4.	flexbox,grid,transision , media query,animations
+
+pix  =absolute
+vh,vw wrt screen
+% wrt parent
+
+rem wrt root fornt size
+em wrt parent font size (like %)
+
+FLEX 
+PARENT CONT PROPERTIES:
+justify-content =align hozontaly
+align-items=align vertically
+flex-wrap:resize align
+
+CHILD PROPS:
+order , flex-grow,shrink,align-self
+
+
+
+
+
+
+JS
