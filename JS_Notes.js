@@ -101,12 +101,12 @@ arr.fill(value,start, end)
 reverse,sort change original array
 
 
-String Methods:
+STRING MATHODS:
 (NOTE:Strings are immutable,they cannot be changed, only replaced.
       str[0]="T" doesnot works)
       1. substring(start,end):
             Nan,-ve=>0,if(start>end) swaps agrs;
-      2. concat(start,end):
+      2. slice(start,end):
             Nan=>0,if args are -ve, start from end(last index=-1);
       3. substr(start,length):
             if start from end(last index=-1);
@@ -126,3 +126,61 @@ String Methods:
 10. split(separator) :
       return array by splitting;
 
+      SEARCHING IN STRING
+
+11. indexOf(query,start):
+      return first index,starting
+      from start(default start=0),but RegExp not supported
+      Similarly for lastIndexOf(query,start);
+12. search(regExp):
+      same as indexOf but only one arg and regExp supported;
+
+13. match(regExp),matchAll(regexp):
+      return match array of matching elements, while matchAll
+      return iterators;
+14. includes(word),startWith/endsWith(word):
+      return true/false if word found/matched in string.
+
+
+
+ARRAY METHODS:
+1. length
+2. delete arr[0]: leave empty space at index 0 in original array;
+3. pop():return poped val,pop from original array;
+4. push(a1,a2,a3...):return len, add all values in original array
+5. shift():same as pop but from start;
+6. unshift(a1,a2,a3...):same as push but from starting
+7. join(joiner):return string with joiner inserted bwn,original array unchanged
+8. toString():retuns joined value in string with , separator;
+9. concat(a1,a2,a3...): push all args and return merged array, but not in original array; 
+10. flat(depth):flat upto depth depth(default depth=1);
+11. splice(start,numberToRemove,whatToInsert):very nice method
+12. slice(start,end):same as string one;
+13. indexOf/lastIndexOf(word,start):start is from where to start;
+14. Array.from("abcd"): return ['a','b','c','d']
+15 includes(word):return true/false;
+
+
+callback vale methods:
+forEach/map/filter/reduce/reduceRight/every/some/find/findIndex((val,ind,arr)=>{}):
+      find() returns first element satisfying condition,
+      findIndex() return index of satisfying element;
+
+
+append(): can add multiple DOMString objects,nodes(but unique nodes), no return;
+appenChild(): append only one node;
+
+js variables can start with $ ans _
+let and const does not bind to this but var does
+
+
+regExp :
+regPattern.test("is string me search krna h"): return true/false if found/not;
+regPattern.exec("is string me search krna h"): return object with value,index of found elements;
+
+this=>referes to obj, jha se method call ho rha h;
+      in case of arrow fun,this is the this obj of (direct parent regular func) where it is defined;
+
+obj.method.call/apply/bind(obj_which_will_use_Obj_method,args_of_method):
+      call,apply will execute the method directly
+      bind return method which we can run anytime;
